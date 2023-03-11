@@ -26,5 +26,7 @@ public void add(int a, int b) {
 		mira obj = new mira();
 		obj.add(25, 55);
 		obj.multiply();
+
 	}
+
 }
