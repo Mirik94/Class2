@@ -1,0 +1,34 @@
+package devops_java_project;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class mira {
+
+public void browser() {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\WEbDrivers\\chromedriver.exe");
+
+		// Initializing the browser driver
+		WebDriver driver = new ChromeDriver();
+
+		// Navigating through a particular website
+		driver.get("https://www.browserstack.com");
+
+		System.out.println("Selenium Webdriver Script in Chrome");
+		System.out.println(driver.getTitle());
+		
+		
+		driver.quit();
+		System.exit(0);
+
+	}
+
+
+	public static void main(String[] args) {
+		mira obj = new mira();
+		obj.browser();
+
+	}
+
+}
